@@ -204,13 +204,9 @@ h3{
     font-weight: 500;
 }
 
-.product:hover{
-    transform: scale(1.2);
-    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.322);
-}
 
 .product:hover img{
-    transform: rotate(20deg);
+    transform: scale(1.2) rotate(15deg);
 }
 
 .img{
@@ -228,13 +224,19 @@ h3{
 
     background-color: rgb(255, 193, 193);
     width: 300px;
-    height: 400px;
+    height: 500px;
     gap: 10px;
     padding: 50px;
     border-radius: 200px;
     color: white;
+}
 
-    transition: transform 0.5s ease;
+.product img{
+    transition: all 0.5s ease;
+}
+
+#uno{
+    padding-bottom: 20px;
 }
 
 #dos{
@@ -244,7 +246,7 @@ h3{
 #tres{
     width: 80%;
     transform: rotate(-10deg);
-    padding-bottom: 10px;
+    padding-bottom: 40px;
 }
 
 .logos{
