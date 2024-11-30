@@ -1,0 +1,369 @@
+:root{
+    --gradient: linear-gradient(to bottom, #00d660, #105800);
+}
+
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo div{
+    width: 60px;
+    height: 60px;
+    background-image: url("./file (3).png");
+    background-position: center;
+    background-size: contain;
+}
+
+#cb{
+    display: none;
+}
+
+.sirena{
+    position: absolute;
+    margin: auto;
+    top: 100px;
+    right: 0;
+    filter: drop-shadow(0 0 20px rgb(0, 0, 0));
+}
+
+header{
+    padding: 40px 100px;
+    position: relative;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 78px;
+
+    padding: 0 70px;
+    background-color: white;
+    z-index: 10000;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.234);
+}
+
+.navbar, .nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links li a{
+    color: rgb(37, 37, 37);
+    text-decoration: none;
+}
+
+.nav-links li:hover a{
+    color: #88009d;
+}
+
+.hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.193) 50%, rgba(254, 208, 255, 0.532)), url(./76739.webp);
+    margin: 30px;
+    color: white;
+    padding: 90px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nosotros{
+    background-image: linear-gradient(rgba(47, 35, 0, 0.397), rgb(49, 38, 0)), url(./todo-necesario-abrir-cafeteria-mesera.jpg);
+    margin: 30px;
+    color: white;
+    padding: 90px;
+}
+
+.nosotros-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.nosotros-content h2{
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+
+.nosotros-content-img{
+    width: 60%;
+}
+
+.nosotros-content-img img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.featured-products, .product-list, .product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.featured-products{
+    gap: 100px;
+    margin: 30px;
+    background-color: rgb(255, 226, 226);
+    padding: 100px 60px;
+}
+
+.featured-products h2{
+    text-transform: uppercase;
+    padding-bottom: 40px;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 0px 5px rgb(228, 187, 187);
+}
+
+h3{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.product-list{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.product p{
+    border-radius: 20px;
+    
+}
+
+.product div img{
+    width: 100%;
+    transition: transform 0.5s ease;
+    top: 0px;
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.8));
+}
+
+.hero h2{
+    text-align: left;
+    font-size: 50px;
+    text-shadow: 0px 5px rgb(43, 0, 0);
+}
+
+.hero-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-content button{
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    margin-top: 30px;
+    font-weight: 900;
+    background-color: #005c3d;
+    color: rgba(255, 255, 255, 0.908);
+    transition: all 0.5 ease;
+    cursor: pointer;
+}
+
+.hero-content button:hover{
+    box-shadow: inset 0 0 10px rgb(0, 48, 24);
+    font-weight: 500;
+}
+
+.product:hover{
+    transform: scale(1.2);
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.322);
+}
+
+.product:hover img{
+    transform: rotate(20deg);
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    position: relative;    
+
+    background-color: rgb(255, 193, 193);
+    width: 300px;
+    height: 400px;
+    gap: 10px;
+    padding: 50px;
+    border-radius: 200px;
+    color: white;
+
+    transition: transform 0.5s ease;
+}
+
+#dos{
+    width: 110%;
+}
+
+#tres{
+    width: 80%;
+    transform: rotate(-10deg);
+    padding-bottom: 10px;
+}
+
+.logos{
+    color: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logos div{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ffffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgba(220, 220, 220, 0.429);
+    transition: all 0.3s ease-in-out;
+}
+
+.logos div i{
+    transition: transform 0.3s ease-in-out;
+}
+
+.logos div:hover{
+    background: var(--gradient);
+    color: white;
+}
+
+.logos div:hover i{
+    transform: scale(1.2);
+}
+
+footer{
+    color: white;
+    background: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    border-top: 1px solid black;
+    text-align: center;
+    padding: 50px;
+}
+
+.menu{
+    opacity: 0;
+}
+
+@media screen and (max-width: 1400px){
+    h2{
+        text-align: left;
+    }
+
+    .nosotros-content{
+        flex-direction: column;
+    }
+
+    .nosotros-content-img{
+        width: clamp(300px,60%, 450px);
+    }
+    
+    .hero-content{
+        padding: 0 50px;
+        display: flex;
+        justify-content: left;
+        align-items: normal;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+
+@media screen and (max-width: 1100px){
+    .sirena{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 980px){
+
+    #cb:checked ~ .nav-links{
+        left: -100%;
+    }
+
+    .nav-links{
+        padding: 50px;
+        position: fixed;
+        z-index: 300;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        height: 100vh;
+        background-color: #000000;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        transition: left 1s ease-in-out;
+    }
+
+    .nav-links li a{
+        color: white;
+    }
+
+    .nav-links li:hover a{
+        color: white;
+        text-shadow: 0px 0px 10px white;
+    }
+
+    .menu{
+        opacity: 1;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .navbar{
+        padding: 30px;
+    }
+
+    .body{
+        position: relative;
+    }
+}
