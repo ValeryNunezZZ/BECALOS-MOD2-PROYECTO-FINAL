@@ -13,6 +13,11 @@
     text-decoration: none;
 }
 
+
+.logos div a i{
+    color: rgb(70, 42, 42);
+}
+
 .logo{
     display: flex;
     justify-content: center;
@@ -29,7 +34,6 @@
 }
 
 #cb{
-    display: none;
 }
 
 button a{
@@ -380,9 +384,5 @@ footer{
 
     .body{
         position: relative;
-    }
-
-    footer a{
-        color: rgb(255, 255, 255);
     }
 }
