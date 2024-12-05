@@ -2,16 +2,70 @@
     --gradient: linear-gradient(to bottom, #fdcdff, #f9b7ff);
 }
 
+.menuP{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.menuP div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgP{
+    height: 300px;
+    background-color: #88009d;
+}
+
+.imgP img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .empleados{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
+}
+
+.section-empleados h2{
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.section-empleados{
+    background-color: rgb(252, 255, 195);
     padding: 100px 60px;
+    margin: 30px;
+}
+
+.empleado-img{
+    height: 250px;
+}
+
+.empleados div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    cursor: pointer;
+
+    transition: transform 0.8s ease;
 }
 
 .empleado-img img{
+    height: 100%;
     width: 100%;
-    border-radius: 5px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.402);
+}
+
+.empleados div:hover{
+    transform: translateY(-10px);
 }
 
 *{
@@ -155,10 +209,32 @@ header{
 
 .featured-products h2{
     text-transform: uppercase;
-    padding-bottom: 40px;
     font-size: 40px;
     text-align: center;
     text-shadow: 0px 5px rgb(228, 187, 187);
+}
+
+.parte_de_abajo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.parte_de_abajo .menuP{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.mensaje{
+    width: 50%;   
+}
+
+.mensaje h2{
+    text-align: left;
+    font-size: 4rem;
 }
 
 h3{
@@ -351,6 +427,27 @@ footer{
 
     footer a{
         color: white;
+    }
+
+    .parte_de_abajo{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .parte_de_abajo .menuP{
+        width: 100%;
+    }
+
+    .parte_de_abajo .menuP .imgP{
+        width: 100%;
+    }
+
+    .mensaje{
+        width: 100%;
+    }
+
+    .mensaje h2{
+        text-align: center;
     }
 
 }
