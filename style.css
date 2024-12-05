@@ -79,6 +79,7 @@
     text-decoration: none;
 }
 
+
 .logos div a i{
     color: rgb(70, 42, 42);
 }
@@ -453,6 +454,11 @@ footer{
 }
 
 @media screen and (max-width: 980px){
+
+
+.mensaje h2{
+    font-size: 2rem;
+}
 
     #cb:checked ~ .nav-links{
         left: -100%;
