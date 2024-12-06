@@ -2,6 +2,54 @@
     --gradient: linear-gradient(to bottom, #fdcdff, #f9b7ff);
 }
 
+.comida{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.grid_comida{
+    width: 50%;
+    height: 100%;
+    grid-template-rows: repeat(2, 250px);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "snd1 snd1 snd2 snd3"
+    "snd1 snd1 snd4 snd5";
+    gap: 5px;
+}
+
+.grid_comida div:nth-child(1){
+    grid-area: snd1;
+}
+
+.grid_comida div:nth-child(2){
+    grid-area: snd2;
+}
+
+.grid_comida div:nth-child(3){
+    grid-area: snd3;
+}
+
+.grid_comida div:nth-child(4){
+    grid-area: snd4;
+}
+
+.grid_comida div:nth-child(5){
+    grid-area: snd5;
+}
+
+.grid_comida div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
 
 .correo-input{
     display: flex;
@@ -27,6 +75,7 @@
     background-color: greenyellow;
     color: white;
     border: none;
+    cursor: pointer;
 }
 
 .menuP{
@@ -457,13 +506,17 @@ footer{
         color: white;
     }
 
-    .parte_de_abajo{
+    .parte_de_abajo, .comida{
         flex-direction: column;
         width: 100%;
     }
 
-    .parte_de_abajo .menuP{
+    .parte_de_abajo .menuP, .mensaje, .grid_comida{
         width: 100%;
+    }
+
+    .comida{
+        flex-direction: column-reverse;
     }
 
     .parte_de_abajo .menuP .imgP{
