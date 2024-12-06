@@ -2,6 +2,33 @@
     --gradient: linear-gradient(to bottom, #fdcdff, #f9b7ff);
 }
 
+
+.correo-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.campo_correo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.campo_correo input{
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.campo_correo input[type="button"]{
+    background-color: greenyellow;
+    color: white;
+    border: none;
+}
+
 .menuP{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
