@@ -60,14 +60,16 @@
 
 
 
-
-
 .correo-input{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+
+.correo-input div h2{
+    text-align: center;
 }
 
 .campo_correo{
