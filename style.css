@@ -2,6 +2,15 @@
     --gradient: linear-gradient(to bottom, #fdcdff, #f9b7ff);
 }
 
+.grid_comida div, .imgP{
+    transition: all 0.5s ease;
+}
+
+.grid_comida div:hover, .imgP:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.389);
+}
+
 .registrate{
     padding: 10px 15px;
     border-radius: 5px;
@@ -200,6 +209,20 @@ footer a{
     top: 100px;
     right: 0;
     filter: drop-shadow(0 0 20px rgb(0, 0, 0));
+    animation-name: sube-baja;
+    animation-timing-function: ease-out;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sube-baja {
+    0%, 100%{
+        transform: translateY(5px);
+    }
+
+    50%{
+        transform: translateY(0);
+    }
 }
 
 header{
@@ -289,6 +312,24 @@ header{
     margin: 30px;
     background: linear-gradient(rgb(255, 209, 217),rgb(255, 159, 175), rgb(255, 119, 119), white);
     padding: 100px 60px;
+}
+
+.video{
+    padding: 100px 60px;
+    background-color: #fad8ff;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video div{
+    width: 100%;
+    height: 100%;
+}
+
+.video div iframe{
+    width: 100%;
 }
 
 .featured-products h2{
